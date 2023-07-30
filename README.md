@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module 6 Challenge Web APIs: Code Quiz
 
 ## Your Task
@@ -86,3 +87,7 @@ You are required to submit BOTH of the following for review:
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+# coding_assessment
+This coding assessment is a combination of multiple-choice questions and interactive coding Challenges
+>>>>>>> 32e0d8a2c0fd5f98a7b1d2ce1342c4fe862eb4fb
