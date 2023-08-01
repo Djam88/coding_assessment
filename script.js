@@ -29,10 +29,10 @@ var questions = [
 
   {
     question:
-      "String values must be enclosed within_ when being assigned to variables",
+      "String values must be enclosed within ___ when being assigned to variables",
     choices: ["commas", "curly brackets", "quotes", "parenthesis"],
     correctAnswer: "parenthesis",
-    return: "quotes",
+    correctAnswer: "quotes",
   },
   {
     question: "Arrays in JavaScript can be used to store",
