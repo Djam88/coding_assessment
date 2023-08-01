@@ -1,4 +1,4 @@
-// Variable declarations
+// Initial variables
 var score = 0;
 var currentQuestionIndex = 0;
 var timer;
@@ -25,6 +25,24 @@ var questions = [
     question: "The condition in an if/else statement is enclosed with",
     choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
     correctAnswer: "parenthesis",
+  },
+
+  {
+    question:
+      "String values must be enclosed within_ when being assigned to variables",
+    choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+    correctAnswer: "parenthesis",
+    return: "quotes",
+  },
+  {
+    question: "Arrays in JavaScript can be used to store",
+    choices: [
+      "numbers and strings",
+      "other arrays",
+      "booleans",
+      "all of the above",
+    ],
+    correctAnswer: "all of the above",
   },
 ];
 
@@ -89,7 +107,7 @@ function showNextQuestion() {
     var choiceButton = document.createElement("button");
     choiceButton.textContent = question.choices[i];
 
-    // Store the choice in a data attribute to retrieve it later
+    // Store the choice in a data attribute
     choiceButton.setAttribute("data-choice", question.choices[i]);
 
     // Add event listener to check the answer when clicked
