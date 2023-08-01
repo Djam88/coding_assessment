@@ -4,10 +4,9 @@ A simple quiz application built with HTML, CSS, and JavaScript. The app presents
 
 ## Screenshots
 
-![Quiz App Home Page](./images/home-page.png)
-_Figure 1: The home page of the Quiz App_
+![Quiz App Home Page](./images/Screenshot%202023-08-01%20233136.png)
 
-![Quiz App Question](./images/question.png)
+![Quiz App Question](./images/Screenshot%202023-08-01%20233226.png)
 
 ## Features
 
