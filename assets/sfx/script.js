@@ -14,7 +14,7 @@ var initialsInput = document.getElementById("initials");
 var submitButton = document.getElementById("submit");
 var feedbackElement = document.getElementById("feedback");
 
-// Array of question objects
+//  objects for questions
 var questions = [
   {
     question: "Commonly used data types DO NOT include:",
@@ -51,7 +51,7 @@ var questions = [
   },
 ];
 
-// Function to initialize the quiz
+//  initialize the quiz using function
 function initializeQuiz() {
   currentQuestionIndex = 0;
   score = 0;
@@ -60,7 +60,7 @@ function initializeQuiz() {
   hideElement(endScreen);
   hideElement(feedbackElement);
 
-  // Event listeners for start and submit buttons
+  // Event listeners for buttons
   startButton.addEventListener("click", startQuiz);
   submitButton.addEventListener("click", saveScore);
 }
@@ -73,7 +73,7 @@ function startQuiz() {
   showElement(document.getElementById("questions"));
 }
 
-// Function to start the timer
+// Set interval, timer function to start
 function startTimer() {
   var time = 60;
   timeElement.textContent = time;
@@ -88,7 +88,7 @@ function startTimer() {
   }, 1000);
 }
 
-// Function to end the quiz
+//   End the quiz function
 function endQuiz() {
   clearInterval(timer);
   hideElement(document.getElementById("questions"));
@@ -96,7 +96,7 @@ function endQuiz() {
   finalScoreElement.textContent = score;
 }
 
-// Function to show the next question
+// Display the next question function
 function showNextQuestion() {
   if (currentQuestionIndex >= questions.length) {
     endQuiz();
@@ -107,15 +107,15 @@ function showNextQuestion() {
   questionTitle.textContent = question.question;
   choicesContainer.innerHTML = "";
 
-  // Iterate through choices and create buttons
+  // Iterate choices and create buttons
   for (var i = 0; i < question.choices.length; i++) {
     var choiceButton = document.createElement("button");
     choiceButton.textContent = question.choices[i];
 
-    // Store the choice in a data attribute
+    // Create  data attribute to store choices
     choiceButton.setAttribute("data-choice", question.choices[i]);
 
-    // Add event listener to check the answer when clicked
+    // Event listener to check the answer
     choiceButton.addEventListener("click", function () {
       var selectedAnswer = this.getAttribute("data-choice");
       checkAnswer(selectedAnswer, question.correctAnswer);
