@@ -17,9 +17,9 @@ A simple quiz application built with HTML, CSS, and JavaScript. The app presents
 
 ## Usage
 
-Click to open the link here in your webbrowser : https://djam88.github.io/coding_assessment/
-Each question has 4 choices
-only one choice is correct
+-Click to open the link here in your webbrowser : https://djam88.github.io/coding_assessment/
+-Each question has 4 choices
+-only one choice is correct
 
 ## Licence
 
