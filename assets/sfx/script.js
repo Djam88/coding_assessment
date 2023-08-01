@@ -26,7 +26,12 @@ var questions = [
     choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
     correctAnswer: "parenthesis",
   },
-
+  {
+    question:
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["JavaScript", "terminal/bash", "for loops", "cosnole.log"],
+    correctAnswer: "console.log",
+  },
   {
     question:
       "String values must be enclosed within ___ when being assigned to variables",
